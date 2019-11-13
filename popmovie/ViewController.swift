@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
@@ -14,7 +15,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        AF.request("http://popmovie.azurewebsites.net/wp-json/wp/v2/peliculas").responseJSON{
+            response in
+            switch(response.result)
+            {
+            case .success(let datos) : if let arregloEvenntos = datos as? NSArray {
+                for evento in arregloEvenntos{
+                    if let diccionarioEvento = evento as? NSDictionary
+                    {
+                        let nuevoElemento = Pelicula(diccionario : diccionarioEvento)
+                        self.peliculas.append(nuevoElemento)
+                    }
+                }
+                
+                self.tvNombreEvento.reloadData()
+                }
+            case .failure(_) : print("Algo salio mal")
+                
+            }
+        }
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

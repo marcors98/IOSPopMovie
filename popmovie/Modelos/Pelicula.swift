@@ -37,8 +37,9 @@ class Pelicula {
         self.poster = poster
     }
     
-    /*init(diccionario : NSDictionary {
+    init(diccionario : NSDictionary) {
         self.id = 0
-        if let id = diccionario.value
-        })*/
+        if let id = diccionario.value(forKey: "id") as? Int {
+            self.id = id
+        }
 }
