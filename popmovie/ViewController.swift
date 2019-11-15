@@ -8,9 +8,11 @@
 
 import UIKit
 import Alamofire
+import AlamofireImage
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-
+    
+    @IBOutlet weak var tvpeliculas: UITableView!
     var peliculas : [Pelicula] = []
     
     override func viewDidLoad() {
@@ -19,17 +21,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             response in
             switch(response.result)
             {
-            case .success(let datos) : if let arregloEvenntos = datos as? NSArray {
-                for evento in arregloEvenntos{
-                    if let diccionarioEvento = evento as? NSDictionary
+            case .success(let datos) : if let arregloPeliculas = datos as? NSArray {
+            
+                for pelicula in arregloPeliculas{
+                    if let diccionarioPelicula = pelicula as? NSDictionary
                     {
-                        let nuevoElemento = Pelicula(diccionario : diccionarioEvento)
+                        let nuevoElemento = Pelicula(diccionario : diccionarioPelicula)
                         self.peliculas.append(nuevoElemento)
                     }
                 }
-                
-                self.tvNombreEvento.reloadData()
-                }
+                self.tvpeliculas.reloadData()
+            }
             case .failure(_) : print("Algo salio mal")
                 
             }
@@ -53,8 +55,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         celda?.lblPelicula.text = peliculas[indexPath.row].nombre
         celda?.lblGenero.text = peliculas[indexPath.row].genero
+        AF.request(peliculas[indexPath.row].banner!).responseImage{
+            response in
+            switch(response.result){
+            case .success(let data) :
+                celda?.imgBanner.image = data
+            case .failure(_) :
+                print("Algo salió mal")
+            }
+        }
         
         return celda!
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDatosPeliculas"{
+            let destino = segue.destination as? DatosPeliculaController
+            destino?.pelicula = peliculas[tvpeliculas.indexPathForSelectedRow!.row]
+        }
     }
 
 }

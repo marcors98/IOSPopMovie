@@ -20,6 +20,7 @@
 		3D71C614237CB1C800EF495B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D71C606237CB17500EF495B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D71C634237CB1E500EF495B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D71C625237CB1D200EF495B /* AlamofireImage.framework */; };
 		3D71C635237CB1E500EF495B /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D71C625237CB1D200EF495B /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD7694F2237E50ED00C08AD4 /* DatosPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7694F1237E50ED00C08AD4 /* DatosPeliculaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +192,7 @@
 		3D4D517F237B582C00C2CE55 /* celdaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaPeliculaController.swift; sourceTree = "<group>"; };
 		3D71C5FB237CB17500EF495B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		3D71C618237CB1D200EF495B /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
+		AD7694F1237E50ED00C08AD4 /* DatosPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPeliculaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				3D4D514F237B4BC200C2CE55 /* AppDelegate.swift */,
 				3D4D5153237B4BC200C2CE55 /* Main.storyboard */,
+				AD7694EC237E3F8000C08AD4 /* Modelos */,
 				3D4D5182237B59C800C2CE55 /* Controllers */,
 				3D4D5156237B4BC200C2CE55 /* Assets.xcassets */,
 				3D4D5158237B4BC200C2CE55 /* LaunchScreen.storyboard */,
@@ -276,19 +279,11 @@
 		3D4D5182237B59C800C2CE55 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD7694F1237E50ED00C08AD4 /* DatosPeliculaController.swift */,
 				3D4D517F237B582C00C2CE55 /* celdaPeliculaController.swift */,
 				3D4D5151237B4BC200C2CE55 /* ViewController.swift */,
-				3D4D5183237B59D900C2CE55 /* Modelos */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		3D4D5183237B59D900C2CE55 /* Modelos */ = {
-			isa = PBXGroup;
-			children = (
-				3D4D517D237B55BA00C2CE55 /* Pelicula.swift */,
-			);
-			path = Modelos;
 			sourceTree = "<group>";
 		};
 		3D71C5FC237CB17500EF495B /* Products */ = {
@@ -318,6 +313,14 @@
 				3D71C633237CB1D200EF495B /* iOS Example.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD7694EC237E3F8000C08AD4 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				3D4D517D237B55BA00C2CE55 /* Pelicula.swift */,
+			);
+			name = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,6 +579,7 @@
 				3D4D517E237B55BA00C2CE55 /* Pelicula.swift in Sources */,
 				3D4D5152237B4BC200C2CE55 /* ViewController.swift in Sources */,
 				3D4D5150237B4BC200C2CE55 /* AppDelegate.swift in Sources */,
+				AD7694F2237E50ED00C08AD4 /* DatosPeliculaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
