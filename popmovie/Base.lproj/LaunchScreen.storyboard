@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aqn-eV-lcu">
-                                <rect key="frame" x="87" y="332" width="240" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blanco" translatesAutoresizingMaskIntoConstraints="NO" id="Aqn-eV-lcu">
+                                <rect key="frame" x="0.0" y="284" width="414" height="328"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10476294842973632" green="0.22728762259388491" blue="0.46516758419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aqn-eV-lcu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Jm-bu-zL8"/>
+                            <constraint firstItem="Aqn-eV-lcu" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.4" constant="1" id="OAE-zm-rtc"/>
+                            <constraint firstItem="Aqn-eV-lcu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="i3c-M3-aqP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aqn-eV-lcu" secondAttribute="trailing" id="pre-eD-VKO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -32,4 +37,7 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blanco" width="881" height="842"/>
+    </resources>
 </document>
