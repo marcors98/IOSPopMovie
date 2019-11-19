@@ -62,7 +62,7 @@ class Pelicula {
             if let genero = acf.value(forKey: "genero") as? String{
                 self.genero = genero
             }
-            if let año = acf.value(forKey: "año") as? String{
+            if let año = acf.value(forKey: "ano") as? String{
                 self.año = año
             }
             if let director = acf.value(forKey: "director") as? String{

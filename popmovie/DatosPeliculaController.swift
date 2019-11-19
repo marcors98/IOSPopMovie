@@ -19,7 +19,6 @@ class DatosPeliculaController : UIViewController {
     @IBOutlet weak var lblGenero: UILabel!
     @IBOutlet weak var lblAño: UILabel!
     @IBOutlet weak var lblDirector: UILabel!
-    @IBOutlet weak var lblTrailer: UILabel!
     @IBOutlet weak var lblDuracion: UILabel!
     @IBOutlet weak var lblElenco: UILabel!
     @IBOutlet weak var lblPais: UILabel!
@@ -31,7 +30,6 @@ class DatosPeliculaController : UIViewController {
         lblGenero.text = pelicula?.genero
         lblAño.text = pelicula?.año
         lblDirector.text = pelicula?.director
-        lblTrailer.text = pelicula?.trailer
         lblDuracion.text = pelicula?.duracion
         lblElenco.text = pelicula?.elenco
         lblPais.text = pelicula?.origen
@@ -55,6 +53,11 @@ class DatosPeliculaController : UIViewController {
             }
         }
         
+    }
+    
+    
+    @IBAction func doTapRegresar(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
