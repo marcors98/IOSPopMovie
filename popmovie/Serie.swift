@@ -1,36 +1,36 @@
 //
-//  Pelicula.swift
+//  Serie.swift
 //  popmovie
 //
-//  Created by Alumno on 11/12/19.
+//  Created by G.A.P.M (Gabriel Pereda) on 11/26/19.
 //  Copyright © 2019 Alumno. All rights reserved.
 //
 
 import Foundation
 
-class Pelicula {
+class Serie {
     
     var id : Int?
     var nombre : String?
     var genero : String?
     var año : String?
-    var director : String?
+    var productor : String?
     var trailer : String?
-    var duracion : String?
+    var temporadas : String?
     var elenco : String?
     var origen : String?
     var banner : String?
     var poster : String?
     
-    init(id : Int?, nombre : String?, genero : String?, año : String?, director : String?, trailer : String?, duracion : String?,elenco : String?, origen : String?, banner : String?, poster : String?) {
+    init(id : Int?, nombre : String?, genero : String?, año : String?, productor : String?, trailer : String?, temporadas : String?,elenco : String?, origen : String?, banner : String?, poster : String?) {
         
         self.id = id
         self.nombre = nombre
         self.genero = genero
         self.año = año
-        self.director = director
+        self.productor = productor
         self.trailer = trailer
-        self.duracion = duracion
+        self.temporadas = temporadas
         self.elenco = elenco
         self.origen = origen
         self.banner = banner
@@ -41,21 +41,20 @@ class Pelicula {
         self.id = 0
         if let id = diccionario.value(forKey: "id") as? Int {
             self.id = id
-            print("id")
         }
         
         self.nombre = ""
         self.genero = ""
         self.año = ""
-        self.director = ""
+        self.productor = ""
         self.trailer = ""
-        self.duracion = ""
+        self.temporadas = ""
         self.elenco = ""
         self.origen = ""
         self.banner = ""
         self.poster = ""
         if let acf = diccionario.value(forKey: "acf") as? NSDictionary{
-            if let nombre = acf.value(forKey: "nobre") as? String{
+            if let nombre = acf.value(forKey: "nombre") as? String{
                 self.nombre = nombre
             }
             if let genero = acf.value(forKey: "genero") as? String{
@@ -64,14 +63,14 @@ class Pelicula {
             if let año = acf.value(forKey: "ano") as? String{
                 self.año = año
             }
-            if let director = acf.value(forKey: "director") as? String{
-                self.director = director
+            if let director = acf.value(forKey: "productor") as? String{
+                self.productor = director
             }
             if let trailer = acf.value(forKey: "trailer") as? String{
-                self.trailer = trailer                
+                self.trailer = trailer
             }
-            if let duracion = acf.value(forKey: "duracion") as? String{
-                self.duracion = duracion
+            if let duracion = acf.value(forKey: "temporadas") as? String{
+                self.temporadas = duracion
             }
             if let elenco = acf.value(forKey: "elenco") as? String{
                 self.elenco = elenco
@@ -89,3 +88,4 @@ class Pelicula {
         }
     }
 }
+

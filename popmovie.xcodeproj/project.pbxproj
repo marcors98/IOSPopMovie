@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C92B6EB238DADBC0009D0E6 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92B6EA238DADBC0009D0E6 /* Serie.swift */; };
 		3D4D5150237B4BC200C2CE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D514F237B4BC200C2CE55 /* AppDelegate.swift */; };
 		3D4D5152237B4BC200C2CE55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D5151237B4BC200C2CE55 /* ViewController.swift */; };
 		3D4D5155237B4BC200C2CE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4D5153237B4BC200C2CE55 /* Main.storyboard */; };
@@ -175,6 +176,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C92B6EA238DADBC0009D0E6 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		3D4D514C237B4BC200C2CE55 /* popmovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popmovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4D514F237B4BC200C2CE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4D5151237B4BC200C2CE55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4D517D237B55BA00C2CE55 /* Pelicula.swift */,
+				3C92B6EA238DADBC0009D0E6 /* Serie.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 			files = (
 				3D4D5180237B582C00C2CE55 /* celdaPeliculaController.swift in Sources */,
 				3D4D517E237B55BA00C2CE55 /* Pelicula.swift in Sources */,
+				3C92B6EB238DADBC0009D0E6 /* Serie.swift in Sources */,
 				3D4D5152237B4BC200C2CE55 /* ViewController.swift in Sources */,
 				3D4D5150237B4BC200C2CE55 /* AppDelegate.swift in Sources */,
 				AD7694F2237E50ED00C08AD4 /* DatosPeliculaController.swift in Sources */,

@@ -55,6 +55,12 @@ class DatosPeliculaController : UIViewController {
         
     }
     
+    @IBAction func doTapVideo(_ sender: Any){
+        let webURL = NSURL(string: pelicula!.trailer!)!
+        let application = UIApplication.shared
+        
+        application.open(webURL as URL)
+    }
     
     @IBAction func doTapRegresar(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
