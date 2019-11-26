@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1355ABC2238DC0DC0090B2AC /* ViewControllerSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355ABC1238DC0DC0090B2AC /* ViewControllerSeries.swift */; };
+		1355ABD2238DC38A0090B2AC /* CeldaSerieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355ABD1238DC38A0090B2AC /* CeldaSerieController.swift */; };
+		1355ABD8238DDC540090B2AC /* DatosSerieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355ABD7238DDC540090B2AC /* DatosSerieController.swift */; };
 		3C92B6EB238DADBC0009D0E6 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92B6EA238DADBC0009D0E6 /* Serie.swift */; };
 		3D4D5150237B4BC200C2CE55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D514F237B4BC200C2CE55 /* AppDelegate.swift */; };
 		3D4D5152237B4BC200C2CE55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D5151237B4BC200C2CE55 /* ViewController.swift */; };
@@ -176,6 +179,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1355ABC1238DC0DC0090B2AC /* ViewControllerSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSeries.swift; sourceTree = "<group>"; };
+		1355ABD1238DC38A0090B2AC /* CeldaSerieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaSerieController.swift; sourceTree = "<group>"; };
+		1355ABD7238DDC540090B2AC /* DatosSerieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosSerieController.swift; sourceTree = "<group>"; };
 		3C92B6EA238DADBC0009D0E6 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		3D4D514C237B4BC200C2CE55 /* popmovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popmovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4D514F237B4BC200C2CE55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +290,9 @@
 				AD7694F1237E50ED00C08AD4 /* DatosPeliculaController.swift */,
 				3D4D517F237B582C00C2CE55 /* celdaPeliculaController.swift */,
 				3D4D5151237B4BC200C2CE55 /* ViewController.swift */,
+				1355ABC1238DC0DC0090B2AC /* ViewControllerSeries.swift */,
+				1355ABD1238DC38A0090B2AC /* CeldaSerieController.swift */,
+				1355ABD7238DDC540090B2AC /* DatosSerieController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -580,10 +589,13 @@
 			files = (
 				3D4D5180237B582C00C2CE55 /* celdaPeliculaController.swift in Sources */,
 				3D4D517E237B55BA00C2CE55 /* Pelicula.swift in Sources */,
+				1355ABD2238DC38A0090B2AC /* CeldaSerieController.swift in Sources */,
 				3C92B6EB238DADBC0009D0E6 /* Serie.swift in Sources */,
+				1355ABC2238DC0DC0090B2AC /* ViewControllerSeries.swift in Sources */,
 				3D4D5152237B4BC200C2CE55 /* ViewController.swift in Sources */,
 				3D4D5150237B4BC200C2CE55 /* AppDelegate.swift in Sources */,
 				AD7694F2237E50ED00C08AD4 /* DatosPeliculaController.swift in Sources */,
+				1355ABD8238DDC540090B2AC /* DatosSerieController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
